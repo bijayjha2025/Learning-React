@@ -1,3 +1,6 @@
+# Learning Journey 
+I practiced this piece of code while learning React in my first day of React Learning. Special thanks to Bro Code, whom I consider my primary teacher in my web development journey. All my React Learnings are based on his videos.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
