@@ -1,3 +1,4 @@
+#I practiced this while I was learning about React Concepts and in this part I learnt about Props, propTypes and defaultProps. Special thanks to Bro Code, whose tutorials have been helping me to gain concepts clearly.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
