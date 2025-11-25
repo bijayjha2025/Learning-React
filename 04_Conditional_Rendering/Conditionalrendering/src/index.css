@@ -1,0 +1,10 @@
+
+.welcomeMessage{
+  background-color: green;
+  font-size: 3em;
+}
+
+.logInMessage{
+  background-color: red;
+  font-size: 3em;
+}
