@@ -8,6 +8,7 @@ function Component1(){
     const [quantity, setQuantity] = useState();
     const [comment, setComment] = useState("");
     const [payment, setPayment] = useState("");
+    const [ship, setShip] = useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -23,6 +24,10 @@ function Component1(){
 
     function handlePayment(event){
         setPayment(event.target.value);
+    }
+
+    function handleShip(event){
+        setShip(event.target.value);
     }
 
     return(
@@ -45,6 +50,18 @@ function Component1(){
                 <option value="Khalti">Khalti</option>
             </select>
             <p>Payment: {payment}</p>
+
+            <label>
+                <input type='radio' value="Pick Up"
+                       checked= {ship === "Pick Up"}
+                       onChange={handleShip}/>Pick Up
+            </label><br></br>
+            <label>
+                <input type='radio' value="Delivery"
+                    checked = {ship === "Delivery"}
+                    onChange={handleShip}/>Delivery
+            </label>
+            <p>Ship: {ship}</p>
 
         </div>
         </>
