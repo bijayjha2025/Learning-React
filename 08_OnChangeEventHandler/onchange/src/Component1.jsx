@@ -6,6 +6,7 @@ function Component1(){
 
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState();
+    const [comment, setComment] = useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -13,6 +14,10 @@ function Component1(){
 
     function handleQuantityChange(event){
         setQuantity(event.target.value);
+    }
+
+    function handleComment(event){
+        setComment(event.target.value);
     }
 
     return(
@@ -23,6 +28,9 @@ function Component1(){
 
             <input value={quantity} onChange={handleQuantityChange}></input>
             <p>Quantity: {quantity}</p>
+
+            <textarea value={comment} onChange={handleComment} placeholder='Enter anything'></textarea>
+            <p>Comment: {comment}</p>
 
         </div>
         </>
