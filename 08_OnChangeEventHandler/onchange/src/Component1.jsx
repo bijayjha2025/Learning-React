@@ -1,12 +1,13 @@
 
 
-import React, {useState} from 'react';
+import React, {use, useState} from 'react';
 
 function Component1(){
 
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState();
     const [comment, setComment] = useState("");
+    const [payment, setPayment] = useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -20,6 +21,10 @@ function Component1(){
         setComment(event.target.value);
     }
 
+    function handlePayment(event){
+        setPayment(event.target.value);
+    }
+
     return(
         <>
         <div>
@@ -31,6 +36,15 @@ function Component1(){
 
             <textarea value={comment} onChange={handleComment} placeholder='Enter anything'></textarea>
             <p>Comment: {comment}</p>
+
+            <select  value={payment} onChange={handlePayment}>
+                <option value="">Select option</option>
+                <option value="COD">COD</option>
+                <option value="connectIPS">ConnectIPS</option>
+                <option value="eSewa">eSewa</option>
+                <option value="Khalti">Khalti</option>
+            </select>
+            <p>Payment: {payment}</p>
 
         </div>
         </>
