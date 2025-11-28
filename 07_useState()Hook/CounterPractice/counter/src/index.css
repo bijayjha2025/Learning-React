@@ -1,0 +1,32 @@
+
+.counterContainer{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.countDisplay{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.counterButton{
+  width: 120px;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  background-color: aquamarine;
+  border-radius: 6px;
+  border: none;
+  color: black;
+}
+
+.counterButton:hover{
+  background-color: azure;
+}
+
+.counterButton:active{
+  background-color: blanchedalmond;
+}
