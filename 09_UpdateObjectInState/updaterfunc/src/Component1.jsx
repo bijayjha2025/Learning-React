@@ -30,7 +30,7 @@ function Component1(){
             <input type="number" value={food.price} onChange={handlePriceChange}/><br></br>
             <input type= "text" value={food.brand} onChange={handleBrandChange}/><br></br>
             <input type="text" value={food.type} onChange={handleTypeChange}/><br></br>
-         </div>;
+         </div>
         </>
     );
 }

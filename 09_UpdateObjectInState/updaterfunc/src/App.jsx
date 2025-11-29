@@ -1,9 +1,9 @@
 
-import Component1 from "./Component1.jsx";
+import Component2 from "./Component2.jsx";
 
 function App(){
   return(
-    <Component1></Component1>
+    <Component2></Component2>
   );
 }
 
