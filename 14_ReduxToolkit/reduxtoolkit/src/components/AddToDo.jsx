@@ -14,13 +14,13 @@ function AddToDo() {
 
 
   return (
-    <div>
-      <form onSubmit={addToDoHandler}>
-        <input type="text" placeholder="Add To Do" style={{marginTop: "20px"}} value={input} onChange={(e) => setInput(e.target.value)}>
-
+    <div className="flex items-center justify-center m-5">
+      <form onSubmit={addToDoHandler} >
+        <input type="text" placeholder="Add To Do" className="border border-gray-300 rounded-md p-2" value={input} onChange={(e) => setInput(e.target.value)}>
         </input>
 
-        <button type="submit">Add To Do</button>
+        
+        <button type="submit" className="ml-2 bg-amber-500 text-white rounded-md p-2">Add To Do</button>
 
         </form>
     </div>

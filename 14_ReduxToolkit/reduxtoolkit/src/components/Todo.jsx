@@ -8,11 +8,11 @@ function Todo() {
     const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center m-5">
       {todos.map((todo, index) => (
-        <div key={todo.id}>
-            <span>{todo.text}</span>
-          <button onClick={() => dispatch(removeTodo(todo.id))}>Remove</button>
+        <div key={todo.id} className="flex items-center justify-center mb-2">
+            <span className="mr-2">{todo.text}</span>
+          <button onClick={() => dispatch(removeTodo(todo.id))} className="bg-red-500 text-white rounded-md p-2">Remove</button>
         </div>
       ))}
     </div>
